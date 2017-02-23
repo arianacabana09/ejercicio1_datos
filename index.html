@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Datos Personales</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <h1>Formulario de Datos</h1>
+  <br>
+  <form action="">
+    <div>
+      <label for="nom">Ingresa tu nombre</label>
+      <input id="nombre" type="text" pattern="[A-Za-z]{3,100}" autofocus="autofocus" required>
+    </div>
+    <br>
+    <div>
+      <label for="apell">Ingresa tu apellido</label>
+      <input id="apellido" type="text" pattern="[A-Za-z]{3,100}" required>
+    </div>
+    <br>
+    <div>
+      <label for="dni">Ingresa tu DNI</label>
+      <input id="dni" type="tel" pattern="^[0-9]\d{7}$" required>
+    </div>
+    <br>
+    <div>
+      <label for="direc">Ingresa tu direccion</label>
+      <input id="direccion" type="text" required>
+    </div>
+    <br>
+    <button onclick="mostrar(); event.preventDefault();" >Enviar datos</button>
+  <div id="datos">
+  </div>
+  </form>
+  <script src="assets\js\app.js"></script>
+</body>
+</html>
